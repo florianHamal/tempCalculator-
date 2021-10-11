@@ -5,10 +5,10 @@ public class Converter {
     //c = celsius
     //k = Kelvin
     public static float cToK(float c){
-        return c+273.15f;
+        return c-273.15f;
     }
     public static float kToC(float k){
-        return k-273.15f;
+        return k+273.15f;
     }
     public static float cToF(float c){
         return c*1.8f+32 ;
@@ -22,4 +22,5 @@ public class Converter {
     public static float fToK(float f){
         return cToK(fToC(f));
     }
+
 }
